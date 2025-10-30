@@ -22,12 +22,15 @@ kubectl -n default create token admin-user
 ```
 To resolve issue for kubectl-config file and API client connection
 
-copy & paste the environment variables from the root.devcontainer to the root of the repo 
+copy & paste the environment variables from the .devcontainer to the root of the repo 
 commit & Sync the changes and delete the exsisting the codespace and create a new codespace
 and again re run the same commands as above.
 
 ```
-
+git submodule update --init --recursive
+pip install ansible kubernetes
+ansible-playbook up.yaml
+kubectl get pods
 
 
 
