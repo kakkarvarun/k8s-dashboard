@@ -20,6 +20,15 @@ You will need a bearer token to access the dashboard. Open a 2nd terminal window
 ```
 kubectl -n default create token admin-user
 ```
+To resolve issue for kubectl-config file and API client connection
+
+copy & paste the environment variables from the root.devcontainer to the root of the repo 
+commit & Sync the changes and delete the exsisting the codespace and create a new codespace
+and again re run the same commands as above.
+
+```
+
+
 
 
 
