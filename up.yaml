@@ -1,5 +1,7 @@
 ---
-- hosts: localhost
+- import_playbook: ./k8s/up.yml
+- name: Install k8s dashboard
+  hosts: localhost
   tasks:
   - name: "Install kubernetes python package"
     pip:

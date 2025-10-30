@@ -1,8 +1,10 @@
 # cdevops-k8sdashboard
 
-k8s dashboard as a hello world
+k8s dashboard as a hello world.....with dependencies
 
 ```
+git submodule update --init --recursive
+pip install ansible kubernetes
 ansible-playbook up.yaml
 kubectl get pods
 ```
